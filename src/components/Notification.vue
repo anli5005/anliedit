@@ -57,15 +57,15 @@ export default {
 }
 
 .notification__button {
-  color: $navbar-color;
+  color: $navbar-color-dark;
   padding: 8px;
   flex: none;
 
   &:active,
   &:focus,
   &:hover {
-    color: $navbar-hover-color;
-    background-color: $navbar-hover-background;
+    color: $navbar-hover-color-dark;
+    background-color: $navbar-hover-background-dark;
   }
 }
 </style>

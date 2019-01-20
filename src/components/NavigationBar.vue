@@ -344,8 +344,12 @@ export default {
 .navigation-bar__title,
 .navigation-bar__button {
   display: inline-block;
-  color: $navbar-color;
+  color: $navbar-color-light;
   background-color: transparent;
+
+  .app--dark & {
+    color: $navbar-color-dark;
+  }
 }
 
 .navigation-bar__button--sync,
@@ -359,7 +363,11 @@ export default {
   &:active,
   &:focus,
   &:hover {
-    color: $navbar-color;
+    color: $navbar-color-light;
+
+    .app--dark & {
+      color: $navbar-color-dark;
+    }
   }
 }
 
@@ -368,8 +376,13 @@ export default {
   &:active,
   &:focus,
   &:hover {
-    color: $navbar-hover-color;
-    background-color: $navbar-hover-background;
+    color: $navbar-hover-color-light;
+    background-color: $navbar-hover-background-light;
+
+    .app--dark & {
+      color: $navbar-hover-color-dark;
+      background-color: $navbar-hover-background-dark;
+    }
   }
 }
 
@@ -476,7 +489,7 @@ $t: 3000ms;
   height: $d;
   display: block;
   position: relative;
-  border: $b solid transparentize($navbar-color, 0.5);
+  border: $b solid transparentize($navbar-color-dark, 0.5);
   border-radius: 50%;
   margin: 2px;
 
@@ -486,7 +499,7 @@ $t: 3000ms;
     position: absolute;
     display: block;
     width: $b;
-    background-color: $navbar-color;
+    background-color: $navbar-color-dark;
     border-radius: $b * 0.5;
     transform-origin: 50% 0;
   }

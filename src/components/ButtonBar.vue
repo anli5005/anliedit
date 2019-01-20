@@ -84,7 +84,7 @@ export default {
 
     .app--dark & {
       color: rgba(255, 255, 255, 0.15);
-      background-color: $navbar-hover-background;
+      background-color: $navbar-hover-background-dark;
     }
   }
 }
