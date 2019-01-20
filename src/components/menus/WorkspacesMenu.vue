@@ -50,7 +50,6 @@ export default {
       return Object.keys(this.workspacesById).length;
     },
     isGithubEnabled() {
-      console.log(GITHUB_CLIENT_ID);
       return GITHUB_CLIENT_ID !== 'none';
     },
   },

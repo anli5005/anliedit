@@ -47,6 +47,10 @@ export default {
   background-image: url(../assets/iconStackedit.svg);
 }
 
+.icon-provider--anliedit {
+  background-image: url(../assets/iconAnliedit.svg);
+}
+
 .icon-provider--google-drive {
   background-image: url(../assets/iconGoogleDrive.svg);
 }

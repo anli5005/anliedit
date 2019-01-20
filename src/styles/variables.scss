@@ -12,7 +12,7 @@ $info-bg: transparentize(#45b0f4, 0.85);
 $code-border-radius: 3px;
 $link-color: #0c93e4;
 $error-color: #f31;
-$border-radius-base: 3px;
+$border-radius-base: 6px;
 $hr-color: rgba(128, 128, 128, 0.33);
 
 $side-bg-light: #ddd;
@@ -52,3 +52,5 @@ $status-color-light: $body-color-light;
 
 $status-bg-dark: darken($editor-background-dark, 10%);
 $status-color-dark: $body-color-dark;
+
+$dialog-gradient: linear-gradient(to right, #0d47a1, #2196f3, #00e676);

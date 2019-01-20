@@ -30,13 +30,17 @@
       </div>
     </label>
     <hr>
-    <menu-entry href="editor" target="_blank">
+    <menu-entry href="https://stackedit.io" target="_blank">
+      <icon-open-in-new slot="icon"></icon-open-in-new>
+      <span>Official StackEdit</span>
+    </menu-entry>
+    <menu-entry href="https://stackedit.io/editor" target="_blank">
       <icon-open-in-new slot="icon"></icon-open-in-new>
       <span>StackEdit 4 &mdash; deprecated</span>
     </menu-entry>
     <menu-entry @click.native="about">
       <icon-help-circle slot="icon"></icon-help-circle>
-      <span>About StackEdit</span>
+      <span>About anliEdit</span>
     </menu-entry>
   </div>
 </template>
