@@ -23,7 +23,7 @@
 <script>
 import FileSaver from 'file-saver';
 import exportSvc from '../../services/exportSvc';
-import sponsorSvc from '../../services/sponsorSvc';
+// import sponsorSvc from '../../services/sponsorSvc';
 import networkSvc from '../../services/networkSvc';
 import googleHelper from '../../services/providers/helpers/googleHelper';
 import modalTemplate from './common/modalTemplate';
@@ -43,7 +43,7 @@ export default modalTemplate({
             const tokenToRefresh = store.getters['workspace/sponsorToken'];
             return tokenToRefresh && googleHelper.refreshToken(tokenToRefresh);
           }),
-          sponsorSvc.getToken(),
+          // sponsorSvc.getToken(),
           exportSvc.applyTemplate(
             currentFile.id,
             this.allTemplatesById[this.selectedTemplate],
