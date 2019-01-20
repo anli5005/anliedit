@@ -1,0 +1,30 @@
+CACHE MANIFEST
+#ver:1/20/2019, 10:05:58 PM
+#plugin:5.0.6
+
+CACHE:
+/icons-392ba6177301458eaa2a620fe6529ae7/favicon.ico
+/icons-392ba6177301458eaa2a620fe6529ae7/manifest.json
+/icons-392ba6177301458eaa2a620fe6529ae7/manifest.webapp
+/9c5d616a4c47080e4b08.worker.js
+/static/img/logo.a1fee8c.svg
+/static/fonts/RobotoMono-Bold.819f3b2.woff
+/static/fonts/RobotoMono-Regular.0b6a547.woff
+/static/js/vendor.76409cee5706308057f8.js
+/static/js/app.b53cc2a1f3f776651d3b.js
+/static/js/manifest.04b58de8f74c198fc45b.js
+/static/css/app.f751dbc4bd0b99fcc84e8c38d3f250f9.css
+/oauth2/callback.html
+/manifest.df8a143aebb9499fdcbc1db4effc42f8.json
+/icon_512x512.ab8fcd3dad8fb4528714373394625be1.png
+/icon_384x384.27b6628af5e3e045e7ebfcfc9dc077b1.png
+/icon_256x256.d48356dcf4bf22c5b098a2cbd6ebe50f.png
+/icon_192x192.e43a5f9ea3b3996a4f18559c27349ded.png
+/icon_128x128.2aab02bf2fd31f31002169b0da0e8ba1.png
+/icon_96x96.ebc0d90d673e72b82d9fa0b93e976886.png
+/
+/app
+/oauth2/callback
+
+NETWORK:
+*
