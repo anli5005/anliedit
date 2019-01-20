@@ -78,7 +78,7 @@ export default {
       }
     },
     exportWorkspace() {
-      const url = utils.addQueryParams('app', {
+      const url = utils.addQueryParams('', {
         ...utils.queryParams,
         exportWorkspace: true,
       }, true);
