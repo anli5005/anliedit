@@ -24,8 +24,7 @@
         <pre class="markdown-highlighting" v-html="markdownSample"></pre>
       </div>
       <div class="side-bar__panel side-bar__panel--toc" :class="{'side-bar__panel--hidden': panel !== 'toc'}">
-        <toc>
-        </toc>
+        <toc></toc>
       </div>
     </div>
   </div>
@@ -121,6 +120,15 @@ export default {
   .textfield {
     font-size: 14px;
     height: 26px;
+  }
+}
+
+.side-bar,
+.side-bar .button {
+  color: $side-color-light;
+
+  .app--dark & {
+    color: $side-color-dark;
   }
 }
 

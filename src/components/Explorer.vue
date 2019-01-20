@@ -75,9 +75,20 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../styles/variables.scss';
+
 .explorer,
 .explorer__tree {
   height: 100%;
+}
+
+.explorer,
+.explorer .button {
+  color: $side-color-light;
+
+  .app--dark & {
+    color: $side-color-dark;
+  }
 }
 
 .explorer__tree {

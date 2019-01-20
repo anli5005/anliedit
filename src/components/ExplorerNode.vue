@@ -191,6 +191,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
 $item-font-size: 14px;
 
 .explorer-node--drag-target {
@@ -207,7 +208,11 @@ $item-font-size: 14px;
   padding-right: 5px;
 
   .explorer-node--selected > & {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .app--dark & {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
 
     .explorer__tree:focus & {
       background-color: #39f;
@@ -230,13 +235,17 @@ $item-font-size: 14px;
 .explorer-node--trash,
 .explorer-node--temp {
   color: rgba(0, 0, 0, 0.5);
+
+  .app--dark & {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .explorer-node--folder > .explorer-node__item,
 .explorer-node--folder > .explorer-node__item-editor,
 .explorer-node__new-child--folder {
   &::before {
-    content: '▹';
+    content: '›';
     position: absolute;
     margin-left: -13px;
   }
@@ -259,6 +268,7 @@ $new-child-height: 25px;
     font-size: $item-font-size;
     padding: 2px;
     height: $new-child-height;
+    color: $side-color-light;
   }
 }
 </style>
