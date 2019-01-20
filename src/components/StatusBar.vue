@@ -106,12 +106,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
+
 .stat-panel {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: $status-color-light;
   font-size: 12px;
+
+  .app--dark & {
+    color: $status-color-dark;
+  }
 }
 
 .stat-panel__block {

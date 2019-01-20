@@ -46,3 +46,9 @@ $editor-color-dark-blockquote: rgba(255, 255, 255, 0.48);
 
 $editor-font-weight-base: 400;
 $editor-font-weight-bold: 600;
+
+$status-bg-light: darken($editor-background-light, 10%);
+$status-color-light: $body-color-light;
+
+$status-bg-dark: darken($editor-background-dark, 10%);
+$status-color-dark: $body-color-dark;

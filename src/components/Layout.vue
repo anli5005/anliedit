@@ -166,7 +166,11 @@ export default {
 }
 
 .layout__panel--status-bar {
-  background-color: #007acc;
+  background-color: $status-bg-light;
+
+  .app--dark & {
+    background-color: $status-bg-dark;
+  }
 }
 
 .layout__panel--editor {
