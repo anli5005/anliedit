@@ -1,8 +1,8 @@
 {
-  "name": "stackedit",
+  "name": "anliedit",
   "version": "5.13.3",
   "description": "Free, open-source, full-featured Markdown editor",
-  "author": "Benoit Schweblin",
+  "author": "anli5005, Benoit Schweblin",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/benweet/stackedit/issues"
@@ -52,7 +52,7 @@
     "mermaid": "^8.0.0-rc.8",
     "mousetrap": "^1.6.1",
     "normalize-scss": "^7.0.1",
-    "prismjs": "^1.6.0",
+    "prismjs": "~1.6.0",
     "request": "^2.85.0",
     "serve-static": "^1.13.2",
     "tmp": "^0.0.33",

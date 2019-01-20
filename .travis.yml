@@ -6,11 +6,11 @@ node_js:
 services:
   - docker
 
-before_deploy:
-  - docker build -t benweet/stackedit .
+# before_deploy:
+#  - docker build -t benweet/stackedit .
 
-deploy:
-  provider: script
-  script: bash build/docker-push-tag.sh
-  on:
-    tags: true
+# deploy:
+#  provider: script
+#  script: bash build/docker-push-tag.sh
+#  on:
+#    tags: true

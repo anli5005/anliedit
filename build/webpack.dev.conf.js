@@ -33,6 +33,5 @@ module.exports = merge(baseWebpackConfig, {
       inject: true
     }),
     new FriendlyErrorsPlugin()
-  ],
-  port: 5002
+  ]
 })
