@@ -231,7 +231,8 @@ export default {
 
 .modal__inner-2 {
   margin: 40px 10px 100px;
-  background-color: #f8f8f8;
+  background-color: $modal-bg-light;
+  color: $modal-color-light;
   padding: 50px 50px 40px;
   border-radius: $border-radius-base;
   position: relative;
@@ -244,7 +245,7 @@ export default {
     left: 0;
     height: $border-radius-base;
     width: 100%;
-    background-image: $dialog-gradient;
+    background-image: $modal-gradient;
   }
 
   &::after {
@@ -254,7 +255,29 @@ export default {
     left: 0;
     height: $border-radius-base;
     width: 100%;
-    background-image: $dialog-gradient;
+    background-image: $modal-gradient;
+  }
+
+  .app--dark & {
+    background-color: $modal-bg-dark;
+    color: $modal-color-dark;
+
+    .button {
+      color: transparentize($modal-color-dark, 0.05);
+    }
+
+    .form-entry__field {
+      border-color: rgb(50, 50, 50);
+    }
+
+    .textfield {
+      background-color: rgb(20, 20, 20);
+      caret-color: $modal-color-dark;
+    }
+
+    .textfield[disabled] {
+      background-color: rgb(40, 40, 40);
+    }
   }
 }
 

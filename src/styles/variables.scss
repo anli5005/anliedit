@@ -53,4 +53,10 @@ $status-color-light: $body-color-light;
 $status-bg-dark: darken($editor-background-dark, 10%);
 $status-color-dark: $body-color-dark;
 
-$dialog-gradient: linear-gradient(to right, #0d47a1, #2196f3, #00e676);
+$modal-gradient: linear-gradient(to right, #0d47a1, #2196f3, #00e676);
+
+$modal-bg-light: #f8f8f8;
+$modal-color-light: $body-color-light;
+
+$modal-bg-dark: #2c2c2c;
+$modal-color-dark: $body-color-dark;
