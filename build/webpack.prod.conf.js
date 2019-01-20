@@ -98,15 +98,20 @@ var webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../static/oauth2'),
+        to: config.build.oauth2SubDirectory,
+        ignore: ['.*']
       }
     ]),
     new FaviconsWebpackPlugin({
       logo: resolve('src/assets/favicon.png'),
-      title: 'StackEdit',
+      title: 'anliEdit',
     }),
     new WebpackPwaManifest({
-      name: 'StackEdit',
-      description: 'Full-featured, open-source Markdown editor',
+      name: 'anliEdit',
+      description: 'StackEdit, tweaked',
       display: 'standalone',
       start_url: 'app',
       background_color: '#ffffff',
