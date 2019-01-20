@@ -11,7 +11,7 @@
       <icon-provider slot="icon" provider-id="couchdbWorkspace"></icon-provider>
       <span>Add a <b>CouchDB</b> backed workspace</span>
     </menu-entry>
-    <menu-entry @click.native="addGithubWorkspace">
+    <menu-entry @click.native="addGithubWorkspace" v-if="isGithubEnabled">
       <icon-provider slot="icon" provider-id="githubWorkspace"></icon-provider>
       <span>Add a <b>GitHub</b> backed workspace</span>
     </menu-entry>
@@ -48,6 +48,10 @@ export default {
     ]),
     workspaceCount() {
       return Object.keys(this.workspacesById).length;
+    },
+    isGithubEnabled() {
+      console.log(GITHUB_CLIENT_ID);
+      return GITHUB_CLIENT_ID !== 'none';
     },
   },
   methods: {
